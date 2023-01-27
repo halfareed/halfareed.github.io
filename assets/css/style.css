@@ -279,7 +279,7 @@ font-size: 24px;
 
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 50px;
+    font-size: 40px;
     line-height: 36px;
     
   }/*to change name size on phone*/
@@ -308,7 +308,7 @@ section {
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 400;
   margin-bottom: 5px;
   padding-bottom: 5px;
