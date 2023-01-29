@@ -1,0 +1,1817 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+@import url('https//fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+*
+body {
+  font-family: "Poppins", 'sans-serif';
+  color: #272829;
+}
+
+a {
+  color:  #9ddfed;
+  text-decoration: none;
+}
+
+a:hover {
+  color:  #9ddfed;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", ''sans-serif'';
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background:  #9ddfed;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #9ddfed;
+  color: #222;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  transition: all ease-in-out 0.5s;
+  z-index: 9997;
+  transition: all 0.5s;
+  padding: 0 15px;
+  background: #101010;
+  overflow-y: auto;
+}
+
+#header .profile img {
+  margin: 15px auto;
+  display: block;
+  width: 120px;
+  border: 8px solid #222;
+}
+
+#header .profile h1 {
+font-size: 24px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  text-align-last: center;
+  text-align-last: center;
+  font-family: "Poppins", ''sans-serif';
+}
+
+#header .profile h1 a,
+#header .profile h1 a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+#header .profile .social-links a {
+  font-size: 20px;
+  display: inline-block;
+  background: #222;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#header .profile .social-links a:hover {
+  background:  #9ddfed;
+  color: #fff;
+  text-decoration: none;
+}
+
+#main {
+  margin-left: 300px;
+}
+
+@media (max-width: 1199px) {
+  #header {
+    left: -300px;
+  }
+
+  #main {
+    margin-left: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Desktop Navigation */
+.nav-menu {
+  padding: 10px 0 0 0;
+}
+
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu>ul>li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu a,
+.nav-menu a:focus {
+  display: flex;
+  align-items: center;
+  color: #fff; /*#a8a9b4;*/
+  padding: 5px 15px;
+  margin-bottom: 1px;
+  transition: 0.3s;
+  font-size: 15px;
+
+}
+
+.nav-menu a i,
+.nav-menu a:focus i {
+  font-size: 24px;
+  padding-right: 8px;
+  color: #6f7180;
+}
+
+.nav-menu a:hover,
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu li:hover>a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-menu a:hover i,
+.nav-menu .active i,
+.nav-menu .active:focus i,
+.nav-menu li:hover>a i {
+  color:  #9ddfed;
+}
+
+/* Mobile Navigation */
+.mobile-nav-toggle {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  z-index: 9998;
+  border: 0;
+  font-size: 24px;
+  transition: all 0.4s;
+  outline: none !important;
+  background-color: #9ddfed;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+
+.mobile-nav-active #header {
+  left: 0;
+}
+
+/*--------------------------------------------------------------
+# Hero 
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/blackbg.png") top center;
+  opacity: ;
+  background-size: cover;
+}
+
+#hero:before {
+  content: "";
+  background: rgba(5, 13, 24, 0.3);
+  position: relative;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+
+#hero .hero-container {
+  position: relative;
+  z-index: 2;
+  min-width: 300px;
+}
+
+#hero h1 {
+  margin: 0 0 20px 0;
+  font-size: 65px;
+  font-weight: 400;
+  line-height: 60px;
+  color: #fff;
+  
+}
+
+#hero p {
+  color: #fff;
+  margin-bottom: 50px;
+  font-size: 30px;
+  font-family: "Poppins", "'sans-serif'";
+  opacity: 0.8;
+}
+
+#hero p span {
+  color: #fff;
+  padding-bottom: 4px;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #9ddfed;
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 40px;
+    line-height: 36px;
+    
+  }/*to change name size on phone*/
+
+  #hero p {
+    font-size: 25px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+/*--------------------------------------------------------------
+# All Sections General (Background)
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background: #222;
+}
+
+.section-title {
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 27px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  position: relative;
+  color: #999;
+  text-transform: uppercase;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 0px;
+  background: #222;
+  bottom: 0;
+  left: 0;
+}
+
+.section-title p {
+  margin-bottom: 0;
+
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about
+{
+  background: #2e2e2e;
+}
+.about .content h3 {
+  font-weight: 700;
+  font-size: 30px;
+  color: #fff;
+}
+
+.about .container .section-title p, .about .container .row li
+{
+    color: #fff;
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  margin-bottom: 20px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.about .content ul strong {
+  margin-right: 10px;
+}
+
+.about .content ul i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: #9ddfed;
+  line-height: 0;
+}
+
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Awards
+--------------------------------------------------------------*/
+.awards{
+  padding-bottom: 30px;
+}
+
+.awards .count-box {
+  padding: 30px;
+  width: 100%;
+}
+
+.awards .count-box i {
+  display: block;
+  font-size: 44px;
+  color:  #9ddfed;
+  float: left;
+  line-height: 0;
+}
+
+.awards .count-box span {
+  font-size: 48px;
+  line-height: 40px;
+  display: block;
+  font-weight: 700;
+  color: #9ddfed;
+  margin-left: 60px;
+}
+
+.awards .count-box p {
+  padding: 15px 0 0 0;
+  margin: 0 0 0 60px;
+  font-family: "Poppins", 'sans-serif';
+  font-size: 14px;
+  color: #fff;
+}
+
+.awards .count-box a {
+  font-weight: 600;
+  display: block;
+  margin-top: 20px;
+  color: #122f57;
+  font-size: 15px;
+  font-family: "Poppins", 'sans-serif';
+  transition: ease-in-out 0.3s;
+}
+
+.awards .count-box a:hover {
+  color: #1f5297;
+}
+
+/*--------------------------------------------------------------
+# Skills
+--------------------------------------------------------------*/
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+
+.skills .progress .skill {
+  padding: 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", ''sans-serif'';
+  color: #fff;
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+  background: #999;
+  height: 10px;
+}
+
+.skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color:  #9ddfed;
+}
+
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+.resume .resume-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color:  #9ddfed;
+   
+}
+
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid  #9ddfed;
+  position: relative;
+}
+
+.resume .resume-item h4 {
+  line-height: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "Poppins", 'sans-serif';
+  color: #fff;
+  margin-bottom: 10px;
+    
+}
+
+.resume .resume-item p
+{
+    color: #999;
+    font-size: 14px;
+}
+
+.resume .resume-item h5 {
+  font-size: 12px;
+  background: #999;
+  padding: 5px 5px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item li {
+    font-size: 15px;
+    
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid  #9ddfed;
+}
+
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+.portfolio {
+    background: #000;
+}
+
+.portfolio .section-title h2{
+    color:#fff;
+}
+
+.portfolio .section-title p{
+    color:#fff;
+}
+
+.portfolio .portfolio-item {
+  margin-bottom: 30px;
+}
+
+.portfolio #portfolio-flters {
+  padding: 0;
+  margin: 0 auto 35px auto;
+  list-style: none;
+  text-align: center;
+  background: #212431;
+  border-radius: 50px;
+  padding: 2px 15px;
+}
+
+.portfolio #portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 15px 8px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
+  color:  #9ddfed;
+}
+
+.portfolio #portfolio-flters li:last-child {
+  margin-right: 0;
+}
+
+.portfolio .portfolio-wrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.portfolio .portfolio-wrap::before {
+  content: "";
+ 
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+  opacity: 0;
+}
+
+.portfolio .portfolio-wrap .portfolio-links {
+  opacity: 1;
+  left: 0;
+  right: 0;
+  bottom: -60px;
+  z-index: 3;
+  position: absolute;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a {
+  color: #fff;
+  font-size: 28px;
+  text-align: center;
+  background: rgba(20, 157, 221, 0.75);
+  transition: 0.3s;
+  width: 50%;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+  background: rgba(20, 157, 221, 0.95);
+}
+
+.portfolio .portfolio-wrap .portfolio-links a+a {
+  border-left: 1px solid #37b3ed;
+}
+
+.portfolio .portfolio-wrap:hover::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-links {
+  opacity: 1;
+  bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Portfolio Details
+--------------------------------------------------------------*/
+.portfolio-details {
+  padding-top: 40px;
+}
+
+.portfolio-details .portfolio-details-slider img {
+  width: 100%;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid  #9ddfed;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color:  #9ddfed;
+}
+
+.portfolio-details .portfolio-info {
+  padding: 30px;
+  box-shadow: 0px 0 30px rgba(5, 13, 24, 0.08);
+}
+
+.portfolio-details .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.portfolio-details .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.portfolio-details .portfolio-info ul li+li {
+  margin-top: 10px;
+}
+
+.portfolio-details .portfolio-description {
+  padding-top: 30px;
+}
+
+.portfolio-details .portfolio-description h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-description p {
+  padding: 0;
+
+}
+
+/*--------------------------------------------------------------
+# Projects aka CourseWork
+--------------------------------------------------------------*/
+
+.projects .row h4
+{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.projects .row p
+{
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.projects .icon-box {
+  margin-bottom: 5px;
+    
+}
+
+.projects .icon {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background:  #9ddfed;
+  border-radius: 50%;
+  transition: 0.5s;
+  border: 1px solid  #2e2e2e;
+}
+
+.projects .icon i {
+  color: #2e2e2e;
+  font-size: 20px;
+  line-height: 0;
+}
+
+.projects .icon-box:hover .icon {
+  background: #9ddfed;
+}
+
+.projects .icon-box:hover .icon i {
+  color:  #2e2e2e;
+}
+
+.projects .title {
+  margin-left: 80px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+    
+}
+
+.projects .title a {
+  color: #fff;
+}
+
+.projects .container .row p {
+  color: #999;
+}
+
+.projects .title a:hover {
+  color: #9ddfed;
+}
+
+.projects .description {
+  margin-left: 80px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+/*--------------------------------------------------------------
+# Interests
+--------------------------------------------------------------*/
+.interests .interests-carousel,
+.interests .interests-slider {
+  overflow: hidden;
+}
+
+.interests .interests-item {
+  box-sizing: content-box;
+  text-align: center;
+  min-height: 100px;
+}
+
+.interests .interests-item .interests-img {
+  width: 60px;
+  border-radius: 100%;
+  margin: 10px 10px;
+    
+}
+
+.interests .interests-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 0 15px 0;
+  color: #fff;
+}
+
+.interests .interests-item h4 {
+  font-size: 14px;
+  color: #fff;
+  margin: 0;
+}
+
+.interests .interests-item p{
+  font-size: 14px;
+  color: #fff;
+ 
+}
+
+.interests .interests-item .quote-icon-left,
+.interests .interests-item .quote-icon-right {
+  color: #c3e8fa;
+  font-size: 26px;
+}
+
+.interests .interests-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.interests .interests-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+}
+
+.interests .interests-item p {
+  font-style: italic;
+  margin: 0 15px 15px 15px;
+  padding: 20px;
+  background: #333;
+  color: #fff;
+  position: relative;
+  margin-bottom: 35px;
+  border-radius: 6px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.interests .interests-item p::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 20px solid #333;
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+  position: absolute;
+  bottom: -20px;
+  left: calc(50% - 20px);
+}
+
+.interests .swiper-pagination {
+  margin-top: 40px;
+  position: relative;
+}
+
+.interests .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #9ddfed;
+}
+
+.interests .swiper-pagination .swiper-pagination-bullet-active {
+  background-color:#9ddfed;
+}
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact .c{
+    background:#999;
+
+   /*#F6F8FC light white */
+}
+
+.contact .info {
+  padding: 30px;
+  background: #F6F8FC;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.contact .info i {
+  font-size: 20px;
+  color: #9ddfed;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #2e2e2e;
+}
+
+.contact .info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #2e2e2e;
+}
+
+.contact .info .email p {
+  padding-top: 5px;
+}
+
+.contact .info .social-links {
+  padding-left: 60px;
+}
+
+.contact .info .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #999;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+
+.contact .info .social-links a:hover {
+  background:  #9ddfed;
+  color: #333;
+}
+
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
+  background:  #9ddfed;
+  color: #fff;
+}
+
+
+
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+  padding: 20px 0;
+  background: #f9f9f9;
+}
+
+.breadcrumbs h2 {
+  font-size: 26px;
+  font-weight: 300;
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+}
+
+.breadcrumbs ol li+li {
+  padding-left: 10px;
+}
+
+.breadcrumbs ol li+li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: #0e2442;
+  content: "/";
+}
+
+@media (max-width: 768px) {
+  .breadcrumbs .d-flex {
+    display: block !important;
+  }
+
+  .breadcrumbs ol {
+    display: block;
+  }
+
+  .breadcrumbs ol li {
+    display: inline-block;
+  }
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  padding: 15px;
+  color: #101010;
+  font-size: 14px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 9999;
+  background: #101010;
+}
+
+#footer .copyright {
+  text-align: center;
+}
+
+#footer .credits {
+  padding-top: 5px;
+  text-align: center;
+  font-size: 13px;
+  color: #999;
+}
+
+@media (max-width: 1199px) {
+  #footer {
+    position: static;
+    width: auto;
+    padding-right: 20px 15px;
+  }
+}
+
+
+
+/*--------------------------------------------------------------
+# Rainbow Scroll Bar
+--------------------------------------------------------------*/
+
+
+::-webkit-scrollbar
+{
+    width:0;
+}
+
+#scrollPath
+{
+    position:fixed;
+    top:0;
+    right:0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255,255,255,0.05);
+}
+
+#progressbar
+{
+    position:fixed;
+    top:0;
+    right:0;
+    width: 15px;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    border-radius:20px;
+    animation: animate1 5s linear infinite;
+}
+
+@keyframes animate1
+{
+    0%,100%
+    {
+        filter: hue-rotate(0deg);
+        
+    }
+    50%
+    {
+        filter:hue-rotate(360deg);
+    }
+}
+
+#progressbar:before
+{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter:blur(0px);
+    
+}
+
+#progressbar:after
+{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter:blur(1px);
+    
+}
+
+/*--------------------------------------------------------------
+# Gallery Card Design Cool
+--------------------------------------------------------------*/
+.portfolio
+{
+    background: #222;
+}
+
+.box
+{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    background: #000;
+    transition: 0.5s;
+}
+
+.box:hover
+{
+    height: 400px;
+}
+
+.box .imgBx
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.box .imgBx img
+{
+    max-width: 100%;
+    opacity: 0.85;
+    transition: 0.5s;
+    
+}
+
+.box:hover .imgBx img
+{
+    opacity: 1;
+    
+}
+
+.box:before
+{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+}
+
+.box:after
+{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -2;
+    filter: blur(5px);
+}
+
+.box:before,
+ .box:after
+{
+    background: linear-gradient(235deg, #ff005e,#010615,#00bcd4);
+    animation: animate 25s linear infinite;
+}
+
+.box:nth-child(2):before,
+.box:nth-child(2):after
+{
+    background: linear-gradient(235deg,#ff005e,#010615,#fbff00);
+}
+
+.box:nth-child(3):before,
+.box:nth-child(3):after
+{
+    background: linear-gradient(235deg,#772aff,#010615,#2196F3);
+}
+
+.box .content
+{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 90px;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity:0;
+    transition: 0.5s;
+}
+
+.box:hover .content
+{
+    opacity: 1;
+}
+
+.box .content h2
+{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 1px;
+    
+}
+
+.box .content h2 span
+{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 200;
+    letter-spacing: 2px;
+    
+}
+
+
+/*--------------------------------------------------------------
+# Education Section (Newly Crated)
+--------------------------------------------------------------*/
+.education .testimonials-carousel,
+.education  .testimonials-slider {
+  overflow: hidden;
+}
+
+.education .testimonial-item {
+  box-sizing: content-box;
+  text-align: center;
+  min-height: 100px;
+}
+
+.education .educational-item.testimonial-img {
+  width: 60px;
+  border-radius: 100%;
+  margin: 10px 10px;
+}
+
+.education .educational-itemh3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 0 15px 0;
+  color: #111;
+}
+
+
+.education .educational-itemh4 {
+  font-size: 14px;
+  color: #999;
+  margin: 0;
+}
+
+.education .educational-itemp {
+  font-style: italic;
+  margin: 0 15px 15px 15px;
+  padding: 20px;
+  background: #fff;
+  position: relative;
+  margin-bottom: 35px;
+  border-radius: 6px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.education .educational-itemp::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 0px solid #fff;
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+  position: absolute;
+  bottom: -20px;
+  left: calc(50% - 20px);
+}
+
+.education .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.education .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid  #9ddfed;
+}
+
+.education .swiper-pagination .swiper-pagination-bullet-active {
+  background-color:  #9ddfed;
+}
+
+
+
+/*--------------------------------------------------------------
+# Education Neon Signs
+--------------------------------------------------------------*/
+
+.containeredu
+{
+    position: relative;
+    display: flex;
+    padding: 80px 40px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.card
+{
+    position: relative;
+    width: 350px;
+    height: 180px;
+    background: #2e2e2e;
+    transition: 0.5s;
+    
+}
+
+.card:hover
+{
+    height: 450px;
+    
+}
+
+.card .lines
+{
+    position: absolute;
+    inset: 0;
+    background: #fff;
+    overflow: hidden;
+    
+}
+
+.card .lines::before
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 120px;
+    background: linear-gradient(transparent, #F6F8FC,#F6F8FC,#F6F8FC, transparent);
+   
+}
+
+.card:hover .lines::before
+{
+    animation-play-state: running;
+}
+
+@keyframes animate3
+{
+    0%
+    {
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100%
+    {
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+    
+}
+
+.card .lines::after
+{
+    content:'';
+    position: absolute;
+    inset: 3px;
+    background: #2e2e2e;
+}
+
+.card .imgBx
+{
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    transform: translateX(-50%);
+    background: #000;
+    transition: 0.5s;
+    z-index: : 10;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover .imgBx
+{
+    top: 25px;
+    width: 200px;
+    height: 200px;
+    
+}
+
+.card .imgBx::before
+{
+    content:'';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 150px;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(transparent, #CC0033,#CC0033,#CC0033, transparent);
+    animation: animate2 6s linear infinite;
+    animation-play-state: paused;
+    
+}
+
+.card:hover .imgBx::before
+{
+    animation-play-state: running;
+}
+
+
+@keyframes animate2
+{
+    0%
+    {
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+    100%
+    {
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+}
+
+.card .imgBx::after
+{
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: #2e2e2e;
+    
+}
+
+.card .imgBx img
+{
+    position: absolute;
+    width: 100px;
+    z-index: 1;
+    opacity: 0.8;
+    transition: 0.5s;
+    
+}
+
+
+.card:hover .imgBx img
+{
+    opacity: 1;
+    
+}
+
+.card .content
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.card .content .details
+{
+    padding: 30px 20px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(145px);
+}
+
+.card:hover .content .details
+{
+    transform: translateY(0px);
+}
+
+.card .content .details h2
+{
+    font-size: 1em;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.2em;
+}
+
+.card .content .details h3
+{
+    font-size: 0.85em;
+    font-weight: 300;
+    color: #fff;
+    line-height: 0.7em;
+    
+}
+
+
+.card .content .details p
+{
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s;
+    align-content: center;
+    font-weight: 200;
+    
+}
+
+.card .content .details a
+{
+    display: inline-block;
+    padding: 8px 15px;
+    background: #cc0033;
+    color: #fff;
+    margin-top: 10px;
+    font-weight: 500;
+    text-decoration: none;
+    opacity: 0;
+    transition: 0.5s;
+}
+.card:hover .content .details p, .card:hover .content .details a
+{
+    opacity: 1;
+}
+
+/*--------------------------------------------------------------
+#Course Work Main & Inner Page
+--------------------------------------------------------------*/
+.coursework{
+    background: #222;
+}
+
+
+.coursecontainer
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:  wrap;
+    padding: 60px 0;
+    gap: 60px;
+}
+
+.coursecontainer .coursebox
+{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background: #2e2e2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coursecontainer .coursebox::before
+{
+    content:'';
+    position: absolute;
+    inset: -10px 40px;
+    border-bottom: 4px solid var(--clr);
+    border-top: 4px solid var(--clr);
+    transform: skew(0deg);
+    transition: 0.5s ease-in-out;
+}
+
+
+.coursecontainer .coursebox:hover::before
+{
+    transform: skewY(0deg);
+    inset: 20px 5px;
+}
+
+.coursecontainer .coursebox::after
+{
+    content:'';
+    position: absolute;
+    inset: 60px -10px;
+    border-left: 4px solid var(--clr);
+    border-right: 4px solid var(--clr);
+    transform: skew(0deg);
+    transition: 0.5s ease-in-out;
+}
+
+
+.coursecontainer .coursebox:hover::after
+{
+    transform: skewY(0deg);
+    inset: 500px 0px;
+}
+
+
+.coursecontainer .coursebox .coursecontent
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    gap: 20px;
+    padding: 0 20px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.coursecontainer .coursebox .coursecontent .courseicon
+{
+    color: var(--clr);
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 0 0 4px #2e2e2e, 0 0 0 6px var(--clr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    background: #2e2e2e;
+    transition: 0.5s ease-in-out;
+}
+
+.coursecontainer .coursebox:hover .coursecontent .courseicon
+{
+    background: var(--clr);
+    color: #2e2e2e;
+    box-shadow: 0 0 0 4px #2e2e2e, 0 0 0 300px var(--clr);
+}
+
+.coursecontainer .coursebox .coursecontent .text h3
+{
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.5s ease-in-out;
+}
+
+.coursecontainer .coursebox:hover .coursecontent .text h3
+{
+    color: #2e2e2e;
+}
+
+.coursecontainer .coursebox .coursecontent .text h4
+{
+    font-size: 0.95em;
+    color: #999;
+    font-weight: 400;
+    transition: 0.5s ease-in-out;
+}
+
+.coursecontainer .coursebox:hover .coursecontent .text h4
+{
+    color: #2e2e2e;
+}
+
+.coursecontainer .coursebox .coursecontent .text p
+{
+    color: #999;
+    transition: 0.5s ease-in-out;
+    font-size: 0.75em;
+}
+
+.coursecontainer .coursebox:hover .coursecontent .text p
+{
+    color: #2e2e2e;
+}
+
+.coursecontainer .coursebox .coursecontent .text a
+{
+    position: relative;
+    background: var(--clr);
+    color: #2e2e2e;
+    padding: 4px 7px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 20px;
+    transition: 0.5s ease-in-out;
+    
+}
+
+
+.coursecontainer .coursebox:hover .coursecontent .text a
+{
+    background: #2e2e2e;
+    color: var(--clr);
+    
+}
+
+/*--------------------------------------------------------------
+#Interests Inner Page Steam Cards
+--------------------------------------------------------------*/
+
+
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background: rgb(84,92,97);
+  background: radial-gradient(circle, rgba(84,92,97,1) 0%, rgba(23,41,48,1) 100%); 
+  flex-wrap: wrap;
+  overflow-x: hidden;
+}
+
+.card3d {
+  margin: 4px;
+  transform: scale(1);
+  perspective: 600px;
+}
+
+.card3d:hover {
+  z-index: 10;
+  transform: scale(1.3);
+}
+
+.card3d,
+.card3d img {
+  transition: all 250ms ease-out;
+}
+
+
+/*--------------------------------------------------------------
+#Interests Inner Page Text
+--------------------------------------------------------------*/
+.interestInner{
+    background: #222;
+}
+
+
+.interestInnercontainer
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:  wrap;
+    padding: 60px 0;
+    gap: 60px;
+}
+
+.interestInner .section-title h4
+{
+    color: #F6F8FC;
+    font-size: 0.8em;
+    font-weight: 100;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
