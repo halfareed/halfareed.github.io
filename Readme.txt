@@ -1,7 +1,7 @@
-Olivia's Portfolio
+Hassan's Portfolio
 ____________________________________________________________________________________________
 
-WELCOME to OLIVIA DUONG's PORTFOLIO!
+WELCOME to Hassan Alfareed's PORTFOLIO!
 ____________________________________________________________________________________________
 
 Template Name: iPortfolio

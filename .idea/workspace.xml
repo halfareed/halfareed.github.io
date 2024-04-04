@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c422670d-160d-43cd-bf99-7f6462691edb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/CNAME" beforeDir="false" afterPath="$PROJECT_DIR$/CNAME" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/AsynchSocket.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/CapstoneSeniorDesign.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/HTTP.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Huffman.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/PCR.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Resume.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/SocketC.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/SocketPython.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/Education/BSDiploma.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/Education/BSDiploma.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/Education/Grad1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/Education/Grad2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/Education/Grad3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/Education/ece.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/Education/mH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/Favicon/android-chrome-192x192.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/Favicon/android-chrome-192x192.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/Favicon/android-chrome-512x512.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/Favicon/android-chrome-512x512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/Favicon/apple-touch-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/Favicon/apple-touch-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/Favicon/favicon-16x16.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/Favicon/favicon-16x16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/Favicon/favicon-32x32.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/Favicon/favicon-32x32.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/Favicon/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/Favicon/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/Favicon/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/Favicon/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/Favicon/favicon2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/Favicon/favicon2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/Interests/PlaneMyself.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/Interests/avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/Interests/brokenFoot.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/Interests/bubbleTea.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/Interests/cap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/Interests/cards.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/Interests/dumpling.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/Interests/halo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/Interests/pistol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/Interests/runningShoes.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/Interests/spotify.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/OITSpeech.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/Scenery.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/droneLinkedIn.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/grad.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/interestCards/CorgiMyself.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/interestCards/GOT.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/interestCards/PlaneMyself.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/interestCards/PlaneWithYana.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/interestCards/Scenery.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/interestCards/aliceinBorderland.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/interestCards/arcane.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/interestCards/babyYoda.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/interestCards/barbie.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/interestCards/beatSaber.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/interestCards/cap.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/interestCards/cheeseburger.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/interestCards/circuitBoard.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/interestCards/corgi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/interestCards/dimsum.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/interestCards/dunkin.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/interestCards/halo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/interestCards/hotpot.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/interestCards/husky.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/interestCards/minecraft.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/interestCards/rice.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/interestCards/salmonSushi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/interestCards/soup.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/interestCards/stardewValley.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/interestCards/valorant.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/interestCards/westworld.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/interestCards/witcher.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/portfolio/Drone1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/portfolio/portfolio-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/portfolio/portfolio-10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/portfolio/portfolio-11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/portfolio/portfolio-12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/portfolio/portfolio-13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/portfolio/portfolio-14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/portfolio/portfolio-15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/portfolio/portfolio-16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/portfolio/portfolio-17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/portfolio/portfolio-18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/portfolio/portfolio-19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/portfolio/portfolio-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/portfolio/portfolio-20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/portfolio/portfolio-21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/portfolio/portfolio-22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/portfolio/portfolio-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/portfolio/portfolio-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/portfolio/portfolio-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/portfolio/portfolio-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/portfolio/portfolio-7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/portfolio/portfolio-8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/profile-img.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/profile-img.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/profile-img2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/profile-img2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/signature.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/signature.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ond3-p01.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/regularExpressions.hs.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gallery.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inner-page-coursework.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interests.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="main" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "halfareed"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="4c436464-2a25-43c6-8d82-fd7c662e51db" />
+        <option name="url" value="https://github.com/halfareed/halfareed24.io1.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2ecVFt9dL2ssG5MRJFIW4FrwXEQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Hassan/IdeaProjects/halfareed24.io&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="DjangoTestsConfigurationType">
+      <module name="halfareed24.io" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="halfareed24.io" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="halfareed24.io" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <module name="halfareed24.io" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="halfareed24.io" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.FlaskServer">
+      <module name="halfareed24.io" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="halfareed24.io" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c422670d-160d-43cd-bf99-7f6462691edb" name="Changes" comment="" />
+      <created>1712203754396</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1712203754396</updated>
+      <workItem from="1712203755072" duration="672000" />
+      <workItem from="1712204449735" duration="205000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/main" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="user">
+                    <value>
+                      <list>
+                        <option value="*" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
