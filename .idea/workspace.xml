@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19bd7f9a-a1dc-4b00-8859-902456e43363" name="Changes" comment="" />
+    <list default="true" id="19bd7f9a-a1dc-4b00-8859-902456e43363" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNAME" beforeDir="false" afterPath="$PROJECT_DIR$/CNAME" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="main" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,7 +50,9 @@
       <option name="presentableId" value="Default" />
       <updated>1712205787267</updated>
       <workItem from="1712205788139" duration="13000" />
-      <workItem from="1712206065112" duration="380000" />
+      <workItem from="1712206065112" duration="1206000" />
+      <workItem from="1712208854047" duration="70000" />
+      <workItem from="1712272014620" duration="2431000" />
     </task>
     <servers />
   </component>
