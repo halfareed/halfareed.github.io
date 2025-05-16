@@ -1,4 +1,4 @@
-Visit my website at https://halfareed.me
+Visit my website at https://halfareed.github.io
 
 Template Name: iPortfolio
 Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
