@@ -4,29 +4,30 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hassan Alfareed — Computer Science Portfolio</title>
+    <meta name="description"
+          content="Portfolio of Hassan Alfareed, a Rutgers University computer science graduate working in data science, Python development and IT support.">
+    <meta name="theme-color" content="#040b14">
 
-    <title>Hassan's Portfolio</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+    <!-- Open Graph / social sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Hassan Alfareed — Computer Science Portfolio">
+    <meta property="og:description"
+          content="Rutgers computer science graduate working in data science, Python development and IT support.">
+    <meta property="og:url" content="https://www.halfareed.com/">
+    <meta property="og:image" content="https://www.halfareed.com/assets/img/profile-img1.jpg">
+    <meta name="twitter:card" content="summary">
 
     <!-- Favicons -->
-    <link href="assets/img/Favicon/favicon.png" rel="icon">
-    <link href="assets/img/Favicon/favicon2.png" rel="favicon2">
-    <link rel="icon" type="image/png" href="assets/img/Favicon/favicon.png"/>
-
-    <link rel="icon" href="assets/img/Favicon/android-chrome-192x192.png" type="image/x-icon"/>
-    <link rel="icon" href="assets/img/Favicon/android-chrome-512x512.png" type="image/x-icon"/>
-    <link rel="icon" href="assets/img/Favicon/apple-touch-icon.png" type="image/x-icon"/>
-    <link rel="icon" href="assets/img/Favicon/favicon-16x16.png" type="image/x-icon"/>
-    <link rel="icon" href="assets/img/Favicon/favicon-32x32.png" type="image/x-icon"/>
-    <link rel="icon" href="assets/img/Favicon/favicon.ico" type="image/x-icon"/>
-
-
-    <link rel="shortcut icon" href="assets/img/Favicon/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="assets/img/Favicon/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/Favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="assets/img/Favicon/apple-touch-icon.png">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap"
           rel="stylesheet">
 
     <!-- Vendor CSS Files -->
@@ -34,8 +35,6 @@
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
     <!-- Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
@@ -44,12 +43,13 @@
 
 <body>
 
+<div id="scrollPath"></div>
 <div id="progressbar"></div>
-<div id="scrollPath>"></div>
 
 
 <!-- ======= Mobile nav toggle button ======= -->
-<i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+<button type="button" class="bi bi-list mobile-nav-toggle d-xl-none" aria-label="Toggle navigation"
+        aria-expanded="false" aria-controls="navbar"></button>
 
 <!-- ======= Header ======= -->
 <header id="header">
@@ -58,18 +58,20 @@
         <div class="profile">
             <img src="assets/img/profile-img1.jpg" alt="Hassan Alfareed's Profile Avatar"
                  class="img-fluid rounded-circle">
-            <h1 class="text-light"><a href="index.html">Hassan Alfareed</a></h1>
+            <div class="profile-name text-light"><a href="index.html">Hassan Alfareed</a></div>
             <div class="social-links mt-3 text-center">
-                <!-- <a href="https://instagram.com/" target="_blank" class="instagram">       <i class="bx bxl-instagram"></i></a> -->
-                <a href="https://discordapp.com/users/" target="_blank" class="discord"> <i
-                        class="bi bi-discord"></i></a>
-                <a href="https://github.com/halfareed" target="_blank" class="github"> <i class="bi bi-github"></i></a>
-                <a href="https://www.linkedin.com/in/hassan-alfareed" target="_blank" class="linkedin"> <i
-                        class="bx bxl-linkedin"></i></a>
+                <!-- <a href="https://instagram.com/" target="_blank" rel="noopener" class="instagram" aria-label="Instagram"><i class="bx bxl-instagram"></i></a> -->
+                <!-- TODO: Discord link needs your user ID appended, e.g. .../users/123456789012345678
+                <a href="https://discordapp.com/users/" target="_blank" rel="noopener" class="discord"
+                   aria-label="Discord"><i class="bi bi-discord"></i></a> -->
+                <a href="https://github.com/halfareed" target="_blank" rel="noopener" class="github"
+                   aria-label="GitHub"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/hassan-alfareed" target="_blank" rel="noopener" class="linkedin"
+                   aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
             </div>
         </div>
 
-        <nav id="navbar" class="nav-menu navbar">
+        <nav id="navbar" class="nav-menu navbar" aria-label="Main navigation">
             <ul>
                 <li><a href="#hero" class="nav-link scrollto active"> <i class="bi bi-house"></i> <span>Home</span></a>
                 </li>
@@ -98,7 +100,8 @@
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
-        <div title="Thank you for visiting my website!"><h1>H A S S A N &nbsp;&nbsp; A L F A R E E D</h1></div>
+        <div title="Thank you for visiting my website!">
+            <h1 aria-label="Hassan Alfareed">H A S S A N &nbsp;&nbsp; A L F A R E E D</h1></div>
         <p><span class="typed"
                  data-typed-items="Computer Scientist, IT Consultant, Data Scientist, Python Enjoyer"></span></p>
     </div>
@@ -123,10 +126,9 @@
                     <br> Machine Learning and Artificial Intelligence (AI) have captured my interest in particular, and
                     I envision my path exploring neural networks to make accurate estimates about given sets of data.
                     Moreover, I would like to delve deeper into Feed Forward Neural Networks. <br><br>My management and
-                    leadership skills are demonstrated through my current position at The Rutgrs Office of Information
+                    leadership skills are demonstrated through my current position at the Rutgers Office of Information
                     and Technology's Help Desk as a Level 2 Consultant and Applications Support Consultant where
-                    exceptional customer service skills and teamwork expertise is the standard of the job.<br>
-
+                    exceptional customer service skills and teamwork expertise is the standard of the job.</p>
             </div>
 
             <div class="row">
@@ -136,10 +138,9 @@
                             <ul>
                                 <li><i class="bi bi-chevron-right"></i> <i class="bi bi-balloon-fill"></i> <strong>Birthday:</strong>
                                     <span>01/27/2000</span></li>
-                                <div title="Please don't spam me PLEASE!">
-                                    <li><i class="bi bi-chevron-right"></i> <i class="bi bi-phone-fill"></i> <strong>Phone:</strong>
-                                        <span>(609) 738-0000</span></li>
-                                </div>
+                                <li title="Please don't spam me PLEASE!"><i class="bi bi-chevron-right"></i> <i
+                                        class="bi bi-phone-fill"></i> <strong>Phone:</strong>
+                                    <span>(609) 738-0000</span></li>
                                 <li><i class="bi bi-chevron-right"></i> <i class="bi bi-house-door-fill"></i> <strong>Address:</strong>
                                     <span>New Brunswick, NJ</span></li>
                             </ul>
@@ -159,696 +160,700 @@
             </div>
         </div>
         <br>
-        <!-- End About Section -->
+    </section>
+    <!-- End About Section -->
 
 
-        <!-- ======= Education Section ======= -->
-        <section id="education" class=".education section-bg">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Education</h2>
+    <!-- ======= Education Section ======= -->
+    <section id="education" class="education section-bg">
+        <div class="container">
+            <div class="section-title">
+                <h2>Education</h2>
+            </div>
+        </div>
+
+
+        <div class="containeredu">
+
+            <img src="assets/img/Education/BSDiploma.jpg" class="edu-diploma"
+                 alt="Hassan Alfareed's Bachelor of Arts diploma, Rutgers University class of 2023">
+
+            <div class="card">
+                <div class="lines"></div>
+                <div class="imgBx">
+                    <img src="assets/img/Education/RU.png" alt="Rutgers University logo">
+                </div>
+
+                <div class="content">
+                    <div class="details">
+                        <h2> B.A. Computer Science </h2>
+                        <h3>Rutgers University-New Brunswick</h3>
+                        <p>Class of 2023 <br> GPA: 3.20</p>
+                        <a href="https://www.rutgers.edu/" target="_blank" rel="noopener">University Site</a>
+                    </div>
                 </div>
             </div>
 
 
-            <div class="containeredu">
+        </div>
 
-                <img src="assets/img/Education/BSDiploma.jpg" alt="Diploma Class of 2023" height="200"
-                     style="border: 3px solid white;">
 
-                <div class="card">
-                    <div class="lines"></div>
-                    <div class="imgBx">
-                        <img src="assets/img/Education/RU.png">
-                    </div>
+    </section> <!-- End Education Section -->
 
-                    <div class="content">
-                        <div class="details">
-                            <h2> B.A. Computer Science </h2>
-                            <h3>Rutgers University-New Brunswick</h3>
-                            <p>Class of 2023 <br> GPA: 3.20</p>
-                            <a href="https://www.rutgers.edu/" target="blank">University Site</a>
-                        </div>
-                    </div>
-                </div>
 
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <div class="section-title">
+                <h2>Resume <span style="margin:0;display:inline;float:right"><a href="assets/Resume1.pdf"
+                                                                           target="_blank" rel="noopener">Official
+                Resume <i class="bi bi-download"></i></a></span></h2>
 
             </div>
 
+            <div class="row">
+                <div class="col-lg-6">
+                    <!-- ---------------------------------------------------- -->
+                    <div><h3 class="resume-title">OIT</h3></div>
 
-        </section> <!-- End Education Section -->
-
-
-        <!-- ======= Resume Section ======= -->
-        <section id="resume" class="resume">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Resume <p style="margin:0;display:inline;float:right"><a href="assets/Resume1.pdf"
-                                                                                 target="_blank">Official Resume</a> <i
-                            class="bi bi-download" width="15px" height="15px"></i></p></h2>
-
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-6">
-                        <!-- ---------------------------------------------------- -->
-                        <div><h3 class="resume-title">OIT</h3></div>
-
-                        <div class="resume-item" data-aos="fade-left">
-                            <h4>Level 2 Help Desk Consultant </h4>
-                            <h5>May 2023-Jan 2024</h5>
-                            <p><em>Rutgers Office of Information &amp; Technology Help Desk</em></p>
-                            <p>
-                                <li>Level 2 phone support consultant
-                                <li>Email Certified, answer emails in the Rutgers IT Help Desk Triage queue related to
-                                    technical issues or general questions
-                                </li>
-                                <li>Troubleshoot all aspects of supported desktop computing</li>
-                                <li>Simultaneously offering phone support and documenting tickets</li>
-                                <li>Ability to perform remote troubleshooting utilizing diagnostic techniques</li>
-                            </p>
-                        </div>
-
-                        <div class="resume-item" data-aos="fade-left">
-                            <h4>Level 1 Help Desk Consultant</h4>
-                            <h5>Jan 2022-May 2023</h5>
-                            <p><em>Rutgers Office of Information &amp; Technology Help Desk</em></p>
-                            <p>
-                                <li>Level 1 phone support consultant</li>
-                                <li>Troubleshoot all aspects of supported desktop computing</li>
-                                <li>Simultaneously offering phone support and documenting tickets</li>
-                                <li>Ability to perform remote troubleshooting utilizing diagnostic techniques</li>
-                            </p>
-                        </div>
-
-                        <div class="resume-item" data-aos="fade-left">
-                            <h4>OIT Lab Consultant</h4>
-                            <h5>Dec 2021-Jan 2022</h5>
-                            <p><em>Rutgers Office of Information &amp; Technology Help Desk</em></p>
-                        </div>
-
-                        <div class="resume-item" data-aos="fade-left">
-                            <h4>OIT Lab Consultant In-Training</h4>
-                            <h5>Oct 2021-Dec 2021</h5>
-                            <p><em>Rutgers Office of Information &amp; Technology Help Desk</em></p>
-                        </div>
-
-                        <!-- ---------------------------------------------------- -->
-
-                        <h3 class="resume-title">Education</h3>
-
-                        <div class="resume-item" data-aos="fade-left" data-aos-delay="100">
-                            <h4>Rutgers University-New Brunswick</h4>
-                            <h5>May 2019-Jan 2024</h5>
-                            <p><em>School of Arts and Science</em></p>
-                            <p>
-                                <li>Major: Computer Science</li>
-                                <li>GPA: 3.20</li>
-                            </p>
-                        </div>
-
-
-                        <!-- ---------------------------------------------------- -->
-
+                    <div class="resume-item" data-aos="fade-left">
+                        <h4>Level 2 Help Desk Consultant </h4>
+                        <h5>May 2023-Jan 2024</h5>
+                        <p><em>Rutgers Office of Information &amp; Technology Help Desk</em></p>
+                        <ul>
+                            <li>Level 2 phone support consultant</li>
+                            <li>Email Certified; answer emails in the Rutgers IT Help Desk Triage queue related to
+                                technical issues or general questions
+                            </li>
+                            <li>Troubleshoot all aspects of supported desktop computing</li>
+                            <li>Simultaneously offering phone support and documenting tickets</li>
+                            <li>Ability to perform remote troubleshooting utilizing diagnostic techniques</li>
+                        </ul>
                     </div>
+
+                    <div class="resume-item" data-aos="fade-left">
+                        <h4>Level 1 Help Desk Consultant</h4>
+                        <h5>Jan 2022-May 2023</h5>
+                        <p><em>Rutgers Office of Information &amp; Technology Help Desk</em></p>
+                        <ul>
+                            <li>Level 1 phone support consultant</li>
+                            <li>Troubleshoot all aspects of supported desktop computing</li>
+                            <li>Simultaneously offering phone support and documenting tickets</li>
+                            <li>Ability to perform remote troubleshooting utilizing diagnostic techniques</li>
+                        </ul>
+                    </div>
+
+                    <div class="resume-item" data-aos="fade-left">
+                        <h4>OIT Lab Consultant</h4>
+                        <h5>Dec 2021-Jan 2022</h5>
+                        <p><em>Rutgers Office of Information &amp; Technology Help Desk</em></p>
+                    </div>
+
+                    <div class="resume-item" data-aos="fade-left">
+                        <h4>OIT Lab Consultant In-Training</h4>
+                        <h5>Oct 2021-Dec 2021</h5>
+                        <p><em>Rutgers Office of Information &amp; Technology Help Desk</em></p>
+                    </div>
+
+                    <!-- ---------------------------------------------------- -->
+
+                    <h3 class="resume-title">Education</h3>
+
+                    <div class="resume-item" data-aos="fade-left" data-aos-delay="100">
+                        <h4>Rutgers University-New Brunswick</h4>
+                        <h5>May 2019-Jan 2024</h5>
+                        <p><em>School of Arts and Science</em></p>
+                        <ul>
+                            <li>Major: Computer Science</li>
+                            <li>GPA: 3.20</li>
+                        </ul>
+                    </div>
+
+
+                    <!-- ---------------------------------------------------- -->
+
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- End Resume Section -->
+    <!-- End Resume Section -->
 
-        <!-- ======= Skills Section ======= -->
+    <!-- ======= Skills Section ======= -->
 
-        <section id="skills" class="skills section-bg">
-            <div class="container">
-
-                <div class="section-title">
-                    <h2>Skills</h2>
-                </div>
-
-                <div class="row skills-content">
-
-                    <div class="col-lg-6" data-aos="fade-up">
-
-
-                        <div class="progress">
-                            <span class="skill">Python <i class="bi bi-filetype-py"></i> <i class="val">90%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                                     aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill">Java <i class="bi bi-filetype-java"></i><i class="val"></i> <i class="val">80%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                                     aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill">C <i class="val">50%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
-                                     aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill">Git <i class="bi bi-git"></i> <i class="val">70%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                     aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <span class="skill">Linux <i class="val">75%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                                     aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-                        <div class="progress">
-                            <span class="skill">SQL <i class="bi bi-filetype-sql"></i><i class="val">60%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                                     aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-
-                        <div class="progress">
-                            <span class="skill">Bash <i class="bi bi-filetype-sh"></i><i class="val">60%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                                     aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <span class="skill">Object-oriented Programming <i class="val">90%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                                     aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill">Pandas <i class="bi bi-database"></i> <i
-                                    class="val">90%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                                     aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill">WindowsOS <i class="bi bi-windows"></i> <i class="val">90%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                                     aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-        <!-- End Skills Section -->
-
-        <!-- ======= Awards & Honors Section (Facts) =======
-
-        <section id="awards" class="awards">
-          <div class="container">
+    <section id="skills" class="skills section-bg">
+        <div class="container">
 
             <div class="section-title">
-              <h2>Awards &amp; Honors </h2>
+                <h2>Skills</h2>
             </div>
 
-            <div class="row no-gutters">
+            <div class="row skills-content">
+
+                <div class="col-lg-6" data-aos="fade-up">
 
 
-            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
-                <div class="count-box">
-                  <i class="bi bi-award"></i>
-                  <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
-                  <p><em>Fall 2023</em></p>
-                  <p><strong></p>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
-                <div class="count-box">
-                  <i class="bi bi-award"></i>
-                  <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
-                  <p><em>May 2023</em></p>
-                  <p><strong></p>
-                </div>
-              </div>
-
-
-             <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
-                <div class="count-box">
-                  <i class="bi bi-award"></i>
-                  <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
-                  <p><em>Fall 2022</em></p>
-                  <p><strong> </p>
-                </div>
-              </div>
-
-             <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
-                <div class="count-box">
-                  <i class="bi bi-award"></i>
-                  <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
-                  <p><em>2021-2022 &amp; 2022-2023</em></p>
-                  <p><strong></p>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="400">
-                <div class="count-box">
-                  <i class="bi bi-award"></i>
-                  <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
-                  <p><em>Fall 2020, Spring 2021 &amp; Fall 2021</em></p>
-                  <p><strong></p>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="500">
-                <div class="count-box">
-                  <i class="bi bi-award"></i>
-                  <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
-                  <p><em>May 2019</em></p>
-                  <p><strong></p>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="600">
-                <div class="count-box">
-                  <i class="bi bi-award"></i>
-                  <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
-                  <p><em>Sept 2015-May 2019</em></p>
-                  <p><strong></p>
-                </div>
-              </div>
-
-            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="700">
-                <div class="count-box">
-                <i class="bi bi-award"></i>
-                  <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
-                  <p><em>May 2019</em></p>
-                  <p><strong></p>
-                </div>
-              </div>
-
-            </div>
-            </div>
-        </section>
-        -->
-        <!-- End Awards & Honors Section (Facts)-->
-
-        <!-- ======= CourseWork Section ======= -->
-
-        <section id="coursework" class="coursework">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Courses </h2>
-                    <p> A highlight of the courses I've enjoyed!</p>
-
-                </div>
-                <div class="coursecontainer">
-
-                    <div class="coursebox" style="--clr: #03dac6;">
-                        <div class="coursecontent">
-                            <div class="courseicon"><i class="bi bi-database-add" width=50px height=50px></i></div>
-
-                            <div class="text">
-                                <h3>Introduction to Data Science</h3>
-                                <h4>01:198:439</h4>
-                                <p>Data visualization, pre-processing data &amp; data wrangling, Map-reduce and the new software stack, Data mining, Machine learning &amp; Applications recommendation systems </p>
-                                <a href="https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-439-introduction-to-data-science" target="_blank">Course
-                                    Site</a>
-                            </div>
+                    <div class="progress">
+                        <span class="skill">Python <i class="bi bi-filetype-py"></i> <i class="val">90%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-label="Python proficiency" aria-valuenow="90" aria-valuemin="0"
+                                 aria-valuemax="100"></div>
                         </div>
                     </div>
 
-                    <div class="coursebox" style="--clr: #89ec5b;">
-                        <div class="coursecontent">
-                            <div cLass="courseicon"><i class="bi bi-sort-up"></i></div>
-
-                            <div class="text">
-                                <h3>Design &amp; Analysis of Computer Algorithms</h3>
-                                <h4>01:198:344</h4>
-                                <p>Basics of Algorithm Design, Sorting &amp; Searching, Hashing, Algorithm
-                                    Design Techniques, Graph Algorithms, Approximation algorithms</p>
-                                <a href=" https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-344-design-and-analysis-of-computer-algorithms" target="_blank">Course
-                                    Site</a>
-                            </div>
+                    <div class="progress">
+                        <span class="skill">Java <i class="bi bi-filetype-java"></i> <i class="val">80%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-label="Java proficiency" aria-valuenow="80" aria-valuemin="0"
+                                 aria-valuemax="100"></div>
                         </div>
                     </div>
 
-                    <div class="coursebox" style="--clr: #ef6950;">
-                        <div class="coursecontent">
-                            <div cLass="courseicon"><i class="bi bi-hdd-network"></i></div>
+                    <div class="progress">
+                        <span class="skill">C <i class="val">50%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-label="C proficiency" aria-valuenow="50" aria-valuemin="0"
+                                 aria-valuemax="100"></div>
+                        </div>
+                    </div>
 
-                            <div class="text">
-                                <h3>Internet Technology</h3>
-                                <h4>01:198:352</h4>
-                                <p>Protocol layers, TCP/IP protocols, routing, switching architectures,
-                                    client-server interaction, socket programming.</p>
-                                <a href="https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-352-internet-technology" target="_blank">Course
-                                    Site</a>
-                            </div>
+                    <div class="progress">
+                        <span class="skill">Git <i class="bi bi-git"></i> <i class="val">70%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-label="Git proficiency" aria-valuenow="70" aria-valuemin="0"
+                                 aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <span class="skill">Linux <i class="val">75%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-label="Linux proficiency" aria-valuenow="75" aria-valuemin="0"
+                                 aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+                    <div class="progress">
+                        <span class="skill">SQL <i class="bi bi-filetype-sql"></i><i class="val">60%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-label="SQL proficiency" aria-valuenow="60" aria-valuemin="0"
+                                 aria-valuemax="100"></div>
                         </div>
                     </div>
 
 
-                    <div class="coursebox" style="--clr: #e1ad01;">
-                        <div class="coursecontent">
-                            <div cLass="courseicon"><i class="bi bi-database-fill-add"></i></div>
-
-                            <div class="text">
-                                <h3>Principles of Information &amp; Data Management</h3>
-                                <h4>01:198:336</h4>
-                                <p>Structured data in relational databases &amp; unstructured text (IR) &amp; semi-structured data (XML, web),
-                                    finding patterns in data, information mapping and integration.</p>
-                                <a href="https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-336-principles-of-information-and-data-management" target="_blank">Course
-                                    Site</a>
-                            </div>
+                    <div class="progress">
+                        <span class="skill">Bash <i class="bi bi-filetype-sh"></i><i class="val">60%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-label="Bash proficiency" aria-valuenow="60" aria-valuemin="0"
+                                 aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <span class="skill">Object-oriented Programming <i class="val">90%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-label="Object-oriented Programming proficiency" aria-valuenow="90" aria-valuemin="0"
+                                 aria-valuemax="100"></div>
                         </div>
                     </div>
 
-                    <div class="coursebox" style="--clr: #FF10F0;">
-                        <div class="coursecontent">
-                            <div cLass="courseicon"><i class="bi bi-terminal"></i></div>
-
-                            <div class="text">
-                                <h3>Computer Architecture</h3>
-                                <h4>01:198:211</h4>
-                                <p>The design &amp; implementation of the processor,
-                                    memory, I/O devices &amp; software/hardware interface.</p>
-                                <a href="https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-211-computer-architecture" target="_blank">Course
-                                    Site</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Course Work Current Section -->
-
-
-        <!-- ======= Projects Preview Section (Services) ======= -->
-
-        <section id="projects" class="projects">
-            <div class="container">
-
-                <div class="section-title">
-                    <h2>Projects <p style="margin:0;display:inline;float:right"> <i
-                            class="bi bi-arrow-left-short"></i></p></h2>
-                    <p>Projects to be updated soon!</p>
-
-                </div>
-                <!--
-                <div class="row">
-
-                    <div class="col-lg-4 col-md-6 icon-box">
-                        <div class="icon"><a
-                                href="https://docs.google.com/document/d/1_zlORq6EKVaJ-uHIBRthxotWMkaLHfxxMeJBQSlzdD4/export?format=pdf"
-                                target="_blank"><i class="bi bi-arrow-down-circle"></i></a></div>
-                        <h4 class="title"><a
-                                href="https://docs.google.com/document/d/1_zlORq6EKVaJ-uHIBRthxotWMkaLHfxxMeJBQSlzdD4/export?format=pdf"
-                                target="_blank">ADVENTURE GAME <br> ON TERASIC BOARD <br><br> <em>Digital System Design
-                            &amp; Computer Architecture</em></a></h4>
-                        <p class="description" data-aos="fade-in">Designing a system of D-Flip Flop in system Verilog
-                            with the Quartus software. Production of simulation waveforms on Quartus software. Game is
-                            uploaded and played on the Altera Terasic Board. </p>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 icon-box">
-                        <div class="icon"><a
-                                href="https://docs.google.com/document/d/1KTKxrhMjZqRZksA8_R38mNBPFlMNk_uzneOB4wW5zUI/export?format=pdf"><i
-                                class="bi bi-arrow-down-circle" target="_blank"></i></a></div>
-                        <h4 class="title"><a
-                                href="https://docs.google.com/document/d/1KTKxrhMjZqRZksA8_R38mNBPFlMNk_uzneOB4wW5zUI/export?format=pdf"
-                                target="_blank">TESLA FEATURES,<br> COSTS &amp; DRAWBACKS<br><br> <em>Sustainable
-                            Energy</em></a></h4>
-                        <p class="description" data-aos="fade-in">Group research on electric car features, disadvantages
-                            and costs. Central focus on the buildup of Tesla as a company, its effects on the
-                            environment, and its future. </p>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 icon-box">
-                        <div class="icon"><a href="https://ds.cs.rutgers.edu/assignment-huffman-coding/"
-                                             target="_blank"><i class="bi bi-arrow-down-circle"></i></a></div>
-                        <h4 class="title"><a href="assets/Huffman.zip" target="_blank">HUFFMAN CODING<br><br> <em>Data
-                            Structures</em></a></h4>
-                        <p class="description" data-aos="fade-in">Writing an algorithm to build a Huffman Tree. Program
-                            ran through VSCode terminal.<br> <a
-                                    href="https://ds.cs.rutgers.edu/assignment-huffman-coding/">Click here for course
-                                site assignment.</a></p>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 icon-box">
-                        <div class="icon"><a
-                                href="https://docs.google.com/document/d/1xQMGGSzy_RL60nmjeUNLb6MSR1lq5SPXGmFxYqKLlPY/export?format=pdf"
-                                target="_blank"><i class="bi bi-arrow-down-circle"></i></a></div>
-                        <h4 class="title"><a
-                                href="https://docs.google.com/document/d/1xQMGGSzy_RL60nmjeUNLb6MSR1lq5SPXGmFxYqKLlPY/export?format=pdf"
-                                target="_blank">DIGITAL COMPARATOR <br><br> <em>Digital Logic Design</em></a></h4>
-                        <p class="description" data-aos="fade-in">A digital comparator was built for a 3-bit unsigned or
-                            2’s complement signed integers on the Emona netCIRCUITlabs board. The digital comparators
-                            were verified by its operation and implemented through Matlab. </p>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 icon-box">
-                        <div class="icon"><a
-                                href="https://docs.google.com/document/d/169bQmZYLiezpv_xr8fDyMhWDxCHeu3B6Ptq0zr-h9Rg/export?format=pdf"
-                                target="_blank"><i class="bi bi-arrow-down-circle"></i></a></div>
-                        <h4 class="title"><a
-                                href="https://docs.google.com/document/d/169bQmZYLiezpv_xr8fDyMhWDxCHeu3B6Ptq0zr-h9Rg/export?format=pdf"
-                                target="_blank">STEADY STATE FREQUENCY <br> &amp; ACTIVE FILTERS <br><br> <em>Principles
-                            of Electrical Engineering II Lab</em></a></h4>
-                        <p class="description" data-aos="fade-in">Analysis of steady state frequency response of stable
-                            transfer functions of various simplistic circuits with the usage of Bode plots.
-                            Characteristics of active filters: The Low Pass, High Pass, Band Pass, Band Reject and All
-                            Pass filters. </p>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 icon-box">
-                        <div class="icon"><a href="https://github.com/radical-teach/major-project-group13.git"
-                                             target="blank"><i class="bi bi-arrow-down-circle"></i></a></div>
-                        <h4 class="title"><a href="https://github.com/radical-teach/major-project-group13.git"
-                                             target="blank">MEDICAL APPOINTMENT SYSTEM <br><br> <em>Software
-                            Engineering</em></a></h4>
-                        <p class="description" data-aos="fade-in">Group project; Building a system that organizes types
-                            of illnesses and doctor medical specializations into separate categories, along with various
-                            constraints. Github repo is private at the moment.</p>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 icon-box">
-                        <div class="icon"><a
-                                href="https://docs.google.com/document/d/19qmPfDVc5Bzs1l4wLDbco6TbRr-J-XU79m00V8z1KJk/export?format=pdf"><i
-                                class="bi bi-arrow-down-circle"></i></a></div>
-                        <h4 class="title"><a
-                                href="https://docs.google.com/document/d/19qmPfDVc5Bzs1l4wLDbco6TbRr-J-XU79m00V8z1KJk/export?format=pdf">PYTHON
-                            RSA <br> KEY GENERATION <br><br> <em>Information &amp; Network Security</em></a></h4>
-                        <p class="description" data-aos="fade-in">Utilizing RSA certificates in PEM format to encrypt a
-                            plaintext message, and then to decrypt the ciphertext. Identification of packages including
-                            PyCrypto and PyCryptodome, installed in Anaconda.</p>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 icon-box">
-                        <div class="icon"><a
-                                href="https://www.linkedin.com/posts/rutgers-electrical-and-computer-engineering1_rutgersece-capstoneexpo2023-activity-7059611995611832320-AJtg?utm_source=share&utm_medium=member_ios"
-                                target="_blank"><i class="bi bi-info-circle"></i></a></div>
-                        <h4 class="title"><a
-                                href="https://www.linkedin.com/posts/rutgers-electrical-and-computer-engineering1_rutgersece-capstoneexpo2023-activity-7059611995611832320-AJtg?utm_source=share&utm_medium=member_ios"
-                                target="_blank">AGRICULTURE MAINTENANCE &amp; CROP MONITORING DRONE<br><br>
-                            <em>LinkedIn</em></a></h4>
-                        <p class="description" data-aos="fade-in">
-
-                            <img src="assets/img/droneLinkedIn.jpg" alt="Drone" height="250">
-
-                        </p>
-
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 icon-box">
-                        <div class="icon"><a href="assets/CapstoneSeniorDesign.zip" target="_blank"><i
-                                class="bi bi-arrow-down-circle"></i></a></div>
-                        <h4 class="title"><a href="assets/CapstoneSeniorDesign.zip" target="_blank">AGRICULTURE
-                            MAINTENANCE &amp; CROP MONITORING DRONE<br><br> <em>Capstone ECE</em></a></h4>
-                        <p class="description" data-aos="fade-in">Group project; This conceptual project aims to address
-                            issues such as wildfires, inadequate water management, and improper pest control by creating
-                            a drone that can detect fires and notify emergency services, dispense proper levels of
-                            pesticides, and manage waterlevels by monitoring soil moisture.</p>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 icon-box">
-                        <div class="icon"><a href="assets/SocketPython.zip" target="_blank"><i
-                                class="bi bi-arrow-down-circle"></i></a></div>
-                        <h4 class="title"><a href="assets/SocketPython.zip" target="_blank">SOCKET PROGRAMMING<br>in
-                            Python<br><br><em>Internet Technology</em></a></h4>
-                        <p class="description" data-aos="fade-in">Exploration of Python programming and Python's socket
-                            programming interface. Two programs (client.py and server.py) were constructed to
-                            communicate with each other over the socket API.</p>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 icon-box">
-                        <div class="icon"><a href="assets/project2.zip"><i class="bi bi-arrow-down-circle"
-                                                                           target="_blank"></i></a></div>
-                        <h4 class="title"><a href="assets/project2.zip" target="_blank">ASYNCHRONOUS SOCKETS<br><br>
-                            <em>Internet Technology</em></a></h4>
-                        <p class="description" data-aos="fade-in">In collaboration with a classmate; Implementation of a
-                            set of programs that mimic an implementation of load balancing across DNS servers. Request
-                            duplication is explored. Four programs were constructed: client, load balancing server, and
-                            two DNS servers. </p>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 icon-box">
-                        <div class="icon"><a href="assets/HTTP.zip" target="_blank"><i
-                                class="bi bi-arrow-down-circle"></i></a></div>
-                        <h4 class="title"><a href="assets/HTTP.zip" target="_blank">HTTP SERVER &amp; WITH
-                            AUTHENTICATION<br><br> <em>Internet Technology</em></a></h4>
-                        <p class="description" data-aos="fade-in">In collaboration with a classmate; Implementation of
-                            an HTTP server that servers secret user data. Access to secret data will be authenticated
-                            through username and password and cookies. HTTP protocol will be used to render
-                            browser-readable data in server.py.</p>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 icon-box">
-                        <div class="icon"><a href="assets/SocketC.zip" target="_blank"><i
-                                class="bi bi-arrow-down-circle"></i></a></div>
-                        <h4 class="title"><a href="assets/SocketC.zip" target="_blank">SOCKET PROGRAMMING <br> in
-                            C<br><br> <em>Network Centric Programming</em></a></h4>
-                        <p class="description" data-aos="fade-in">Implementation of a basic socket server and client
-                            using the port 8080 and local host. Client and server will be communicating and exchanging
-                            messages. </p>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 icon-box">
-                        <div class="icon"><a href="assets/ond3-p01.tar.gz" target="_blank"><i
-                                class="bi bi-arrow-down-circle"></i></a></div>
-                        <h4 class="title"><a href="assets/ond3-p01.tar.gz" target="_blank">MULTIPLE STRING
-                            SEARCHER<br><br> <em>Network Centric Programming</em></a></h4>
-                        <p class="description" data-aos="fade-in">Linux programming environment C programming concepts
-                            such as command line arguments, pointers, IO, etc. </p>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 icon-box">
-                        <div class="icon"><a href="assets/PCR.zip" target="_blank"><i
-                                class="bi bi-arrow-down-circle"></i></a></div>
-                        <h4 class="title"><a href="assets/PCR.zip" target="_blank">READING PCR VALUES &amp; ON A TPM 2.0
-                            SIMULATOR<br><br> <em>Hardware &amp; Systems Security</em></a></h4>
-                        <p class="description" data-aos="fade-in">This lab assignment is to run a basic TPM command to
-                            read PCR values on a TPM 2.0 simulator. Ubuntu Linux is utilized regardless of TPM 2.0 chip
-                            through a virtual machine.</p>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 icon-box">
-                        <div class="icon"><a
-                                href="https://docs.google.com/document/d/1sDFdKmxhXUEkReSRuht3BWcmcC1qbgvxnMlpVh03fnQ/edit?usp=sharing"
-                                target="_blank"><i class="bi bi-arrow-down-circle"></i></a></div>
-                        <h4 class="title"><a
-                                href="https://docs.google.com/document/d/1sDFdKmxhXUEkReSRuht3BWcmcC1qbgvxnMlpVh03fnQ/edit?usp=sharing"
-                                target="_blank">INTRODUCTION TO HADOOP &amp; PYSPARK<br><br> <em>Cloud Computing &amp;
-                            Big Data</em></a></h4>
-                        <p class="description" data-aos="fade-in">In collaboration with a classmate; This lab assignment
-                            is an introduction to setting up Hadoop and PySpark with Python files.</p>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 icon-box">
-                        <div class="icon"><a
-                                href="https://docs.google.com/document/d/1yKnYqAj2ee5-LyqqhhKpUUWZFmrpjiaAG1_ieVbjwbU/edit?usp=sharing"
-                                target="_blank"><i class="bi bi-arrow-down-circle"></i></a></div>
-                        <h4 class="title"><a
-                                href="https://docs.google.com/document/d/1yKnYqAj2ee5-LyqqhhKpUUWZFmrpjiaAG1_ieVbjwbU/edit?usp=sharing"
-                                target="_blank">SIMPLESCALAR: PIPELINING &amp; BRANCH PREDICTION<br><br> <em>Computer
-                            Architecture I</em></a></h4>
-                        <p class="description" data-aos="fade-in">In collaboration with classmates; This lab assignment
-                            utilizes the SimpleScalar simulator to run experiments regarding pipelining and branch
-                            prediction. </p>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 icon-box">
-                        <div class="icon"><a href="assets/regularExpressions.hs.zip" target="_blank"><i
-                                class="bi bi-arrow-down-circle"></i></a></div>
-                        <h4 class="title"><a href="assets/regularExpressions.hs.zip" target="_blank">REGULAR EXPRESSIONS
-                            &amp; IN HASKELL<br><br> <em>Principles of Programming Languages</em></a></h4>
-                        <p class="description" data-aos="fade-in">Assignment given to further explore and test
-                            properties of Haskell regular expressions.</p>
-                    </div>
-
-                </div>
-                    -->
-            </div>
-
-        </section>
-
-
-
-        <!-- End Projects Preview Section (Services) -->
-
-        <!-- ======= Interests Section ======= -->
-        <!-- End Interests Section  -->
-
-        <!-- ======= Contact Section ======= -->
-        <section id="contact" class="contact">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Contact <img src="assets/img/Interests/avatar2.png" class="testimonial-img"
-                                     alt="Hassan Alfareed's Cartoon Avatar" width="60" height="60"></h2>
-                </div>
-
-                <div class="row" data-aos="fade-up">
-
-                    <div class="col-lg-5 d-flex align-items-stretch">
-                        <div class="info">
-
-                            <div class="email">
-                                <i class="bi bi-envelope"></i>
-                                <h4>Email:</h4>
-                                <p>halfareed24@gmail.com</p>
-                            </div>
-
-                            <div class="phone">
-                                <i class="bi bi-phone"></i>
-                                <h4>Call:</h4>
-                                <p>(609) 738-0000</p>
-                            </div>
-
-
-                            <br><br>
-
-
-                            <h5>Best,</h5> <img src="assets/img/signature.png" class="testimonial-img"
-                                                alt="Hassan Alfareed's Signature" width="180" height="75">
-
+                    <div class="progress">
+                        <span class="skill">Pandas <i class="bi bi-database"></i> <i
+                                class="val">90%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-label="Pandas proficiency" aria-valuenow="90" aria-valuemin="0"
+                                 aria-valuemax="100"></div>
                         </div>
                     </div>
 
-
-                    <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-                        <iframe src="https://forms.gle/YVexii2TEoCbpVCG6"
-                                width="800" height="470" frameborder="0" marginheight="0" marginwidth="0">Loading…
-                        </iframe>
+                    <div class="progress">
+                        <span class="skill">WindowsOS <i class="bi bi-windows"></i> <i class="val">90%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-label="WindowsOS proficiency" aria-valuenow="90" aria-valuemin="0"
+                                 aria-valuemax="100"></div>
+                        </div>
                     </div>
 
                 </div>
 
             </div>
-        </section>
 
-        <!-- End Contact Section -->
+        </div>
     </section>
+    <!-- End Skills Section -->
+
+    <!-- ======= Awards & Honors Section (Facts) =======
+
+    <section id="awards" class="awards">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Awards &amp; Honors </h2>
+        </div>
+
+        <div class="row no-gutters">
+
+
+        <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+            <div class="count-box">
+              <i class="bi bi-award"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
+              <p><em>Fall 2023</em></p>
+              <p><strong></p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="count-box">
+              <i class="bi bi-award"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
+              <p><em>May 2023</em></p>
+              <p><strong></p>
+            </div>
+          </div>
+
+
+         <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="count-box">
+              <i class="bi bi-award"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
+              <p><em>Fall 2022</em></p>
+              <p><strong> </p>
+            </div>
+          </div>
+
+         <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="count-box">
+              <i class="bi bi-award"></i>
+              <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
+              <p><em>2021-2022 &amp; 2022-2023</em></p>
+              <p><strong></p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="count-box">
+              <i class="bi bi-award"></i>
+              <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
+              <p><em>Fall 2020, Spring 2021 &amp; Fall 2021</em></p>
+              <p><strong></p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="500">
+            <div class="count-box">
+              <i class="bi bi-award"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
+              <p><em>May 2019</em></p>
+              <p><strong></p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="600">
+            <div class="count-box">
+              <i class="bi bi-award"></i>
+              <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
+              <p><em>Sept 2015-May 2019</em></p>
+              <p><strong></p>
+            </div>
+          </div>
+
+        <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="700">
+            <div class="count-box">
+            <i class="bi bi-award"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
+              <p><em>May 2019</em></p>
+              <p><strong></p>
+            </div>
+          </div>
+
+        </div>
+        </div>
+    </section>
+    -->
+    <!-- End Awards & Honors Section (Facts)-->
+
+    <!-- ======= CourseWork Section ======= -->
+
+    <section id="coursework" class="coursework">
+        <div class="container">
+            <div class="section-title">
+                <h2>Courses </h2>
+                <p> A highlight of the courses I've enjoyed!</p>
+
+            </div>
+            <div class="coursecontainer">
+
+                <div class="coursebox" style="--clr: #03dac6;">
+                    <div class="coursecontent">
+                        <div class="courseicon"><i class="bi bi-database-add"></i></div>
+
+                        <div class="text">
+                            <h3>Introduction to Data Science</h3>
+                            <h4>01:198:439</h4>
+                            <p>Data visualization, pre-processing data &amp; data wrangling, Map-reduce and the new software stack, Data mining, Machine learning &amp; Applications recommendation systems </p>
+                            <a href="https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-439-introduction-to-data-science" target="_blank">Course
+                                Site</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="coursebox" style="--clr: #89ec5b;">
+                    <div class="coursecontent">
+                        <div class="courseicon"><i class="bi bi-sort-up"></i></div>
+
+                        <div class="text">
+                            <h3>Design &amp; Analysis of Computer Algorithms</h3>
+                            <h4>01:198:344</h4>
+                            <p>Basics of Algorithm Design, Sorting &amp; Searching, Hashing, Algorithm
+                                Design Techniques, Graph Algorithms, Approximation algorithms</p>
+                            <a href="https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-344-design-and-analysis-of-computer-algorithms"
+                               target="_blank" rel="noopener">Course
+                                Site</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="coursebox" style="--clr: #ef6950;">
+                    <div class="coursecontent">
+                        <div class="courseicon"><i class="bi bi-hdd-network"></i></div>
+
+                        <div class="text">
+                            <h3>Internet Technology</h3>
+                            <h4>01:198:352</h4>
+                            <p>Protocol layers, TCP/IP protocols, routing, switching architectures,
+                                client-server interaction, socket programming.</p>
+                            <a href="https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-352-internet-technology" target="_blank">Course
+                                Site</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="coursebox" style="--clr: #e1ad01;">
+                    <div class="coursecontent">
+                        <div class="courseicon"><i class="bi bi-database-fill-add"></i></div>
+
+                        <div class="text">
+                            <h3>Principles of Information &amp; Data Management</h3>
+                            <h4>01:198:336</h4>
+                            <p>Structured data in relational databases &amp; unstructured text (IR) &amp; semi-structured data (XML, web),
+                                finding patterns in data, information mapping and integration.</p>
+                            <a href="https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-336-principles-of-information-and-data-management" target="_blank">Course
+                                Site</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="coursebox" style="--clr: #FF10F0;">
+                    <div class="coursecontent">
+                        <div class="courseicon"><i class="bi bi-terminal"></i></div>
+
+                        <div class="text">
+                            <h3>Computer Architecture</h3>
+                            <h4>01:198:211</h4>
+                            <p>The design &amp; implementation of the processor,
+                                memory, I/O devices &amp; software/hardware interface.</p>
+                            <a href="https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-211-computer-architecture" target="_blank">Course
+                                Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Course Work Current Section -->
+
+
+    <!-- ======= Projects Preview Section (Services) ======= -->
+
+    <section id="projects" class="projects">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Projects <span style="margin:0;display:inline;float:right"><i
+                    class="bi bi-arrow-left-short"></i></span></h2>
+                <p>Projects to be updated soon!</p>
+
+            </div>
+            <!--
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 icon-box">
+                    <div class="icon"><a
+                            href="https://docs.google.com/document/d/1_zlORq6EKVaJ-uHIBRthxotWMkaLHfxxMeJBQSlzdD4/export?format=pdf"
+                            target="_blank"><i class="bi bi-arrow-down-circle"></i></a></div>
+                    <h4 class="title"><a
+                            href="https://docs.google.com/document/d/1_zlORq6EKVaJ-uHIBRthxotWMkaLHfxxMeJBQSlzdD4/export?format=pdf"
+                            target="_blank">ADVENTURE GAME <br> ON TERASIC BOARD <br><br> <em>Digital System Design
+                        &amp; Computer Architecture</em></a></h4>
+                    <p class="description" data-aos="fade-in">Designing a system of D-Flip Flop in system Verilog
+                        with the Quartus software. Production of simulation waveforms on Quartus software. Game is
+                        uploaded and played on the Altera Terasic Board. </p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 icon-box">
+                    <div class="icon"><a
+                            href="https://docs.google.com/document/d/1KTKxrhMjZqRZksA8_R38mNBPFlMNk_uzneOB4wW5zUI/export?format=pdf"><i
+                            class="bi bi-arrow-down-circle" target="_blank"></i></a></div>
+                    <h4 class="title"><a
+                            href="https://docs.google.com/document/d/1KTKxrhMjZqRZksA8_R38mNBPFlMNk_uzneOB4wW5zUI/export?format=pdf"
+                            target="_blank">TESLA FEATURES,<br> COSTS &amp; DRAWBACKS<br><br> <em>Sustainable
+                        Energy</em></a></h4>
+                    <p class="description" data-aos="fade-in">Group research on electric car features, disadvantages
+                        and costs. Central focus on the buildup of Tesla as a company, its effects on the
+                        environment, and its future. </p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 icon-box">
+                    <div class="icon"><a href="https://ds.cs.rutgers.edu/assignment-huffman-coding/"
+                                         target="_blank"><i class="bi bi-arrow-down-circle"></i></a></div>
+                    <h4 class="title"><a href="assets/Huffman.zip" target="_blank">HUFFMAN CODING<br><br> <em>Data
+                        Structures</em></a></h4>
+                    <p class="description" data-aos="fade-in">Writing an algorithm to build a Huffman Tree. Program
+                        ran through VSCode terminal.<br> <a
+                                href="https://ds.cs.rutgers.edu/assignment-huffman-coding/">Click here for course
+                            site assignment.</a></p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 icon-box">
+                    <div class="icon"><a
+                            href="https://docs.google.com/document/d/1xQMGGSzy_RL60nmjeUNLb6MSR1lq5SPXGmFxYqKLlPY/export?format=pdf"
+                            target="_blank"><i class="bi bi-arrow-down-circle"></i></a></div>
+                    <h4 class="title"><a
+                            href="https://docs.google.com/document/d/1xQMGGSzy_RL60nmjeUNLb6MSR1lq5SPXGmFxYqKLlPY/export?format=pdf"
+                            target="_blank">DIGITAL COMPARATOR <br><br> <em>Digital Logic Design</em></a></h4>
+                    <p class="description" data-aos="fade-in">A digital comparator was built for a 3-bit unsigned or
+                        2’s complement signed integers on the Emona netCIRCUITlabs board. The digital comparators
+                        were verified by its operation and implemented through Matlab. </p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 icon-box">
+                    <div class="icon"><a
+                            href="https://docs.google.com/document/d/169bQmZYLiezpv_xr8fDyMhWDxCHeu3B6Ptq0zr-h9Rg/export?format=pdf"
+                            target="_blank"><i class="bi bi-arrow-down-circle"></i></a></div>
+                    <h4 class="title"><a
+                            href="https://docs.google.com/document/d/169bQmZYLiezpv_xr8fDyMhWDxCHeu3B6Ptq0zr-h9Rg/export?format=pdf"
+                            target="_blank">STEADY STATE FREQUENCY <br> &amp; ACTIVE FILTERS <br><br> <em>Principles
+                        of Electrical Engineering II Lab</em></a></h4>
+                    <p class="description" data-aos="fade-in">Analysis of steady state frequency response of stable
+                        transfer functions of various simplistic circuits with the usage of Bode plots.
+                        Characteristics of active filters: The Low Pass, High Pass, Band Pass, Band Reject and All
+                        Pass filters. </p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 icon-box">
+                    <div class="icon"><a href="https://github.com/radical-teach/major-project-group13.git"
+                                         target="blank"><i class="bi bi-arrow-down-circle"></i></a></div>
+                    <h4 class="title"><a href="https://github.com/radical-teach/major-project-group13.git"
+                                         target="blank">MEDICAL APPOINTMENT SYSTEM <br><br> <em>Software
+                        Engineering</em></a></h4>
+                    <p class="description" data-aos="fade-in">Group project; Building a system that organizes types
+                        of illnesses and doctor medical specializations into separate categories, along with various
+                        constraints. Github repo is private at the moment.</p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 icon-box">
+                    <div class="icon"><a
+                            href="https://docs.google.com/document/d/19qmPfDVc5Bzs1l4wLDbco6TbRr-J-XU79m00V8z1KJk/export?format=pdf"><i
+                            class="bi bi-arrow-down-circle"></i></a></div>
+                    <h4 class="title"><a
+                            href="https://docs.google.com/document/d/19qmPfDVc5Bzs1l4wLDbco6TbRr-J-XU79m00V8z1KJk/export?format=pdf">PYTHON
+                        RSA <br> KEY GENERATION <br><br> <em>Information &amp; Network Security</em></a></h4>
+                    <p class="description" data-aos="fade-in">Utilizing RSA certificates in PEM format to encrypt a
+                        plaintext message, and then to decrypt the ciphertext. Identification of packages including
+                        PyCrypto and PyCryptodome, installed in Anaconda.</p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 icon-box">
+                    <div class="icon"><a
+                            href="https://www.linkedin.com/posts/rutgers-electrical-and-computer-engineering1_rutgersece-capstoneexpo2023-activity-7059611995611832320-AJtg?utm_source=share&utm_medium=member_ios"
+                            target="_blank"><i class="bi bi-info-circle"></i></a></div>
+                    <h4 class="title"><a
+                            href="https://www.linkedin.com/posts/rutgers-electrical-and-computer-engineering1_rutgersece-capstoneexpo2023-activity-7059611995611832320-AJtg?utm_source=share&utm_medium=member_ios"
+                            target="_blank">AGRICULTURE MAINTENANCE &amp; CROP MONITORING DRONE<br><br>
+                        <em>LinkedIn</em></a></h4>
+                    <p class="description" data-aos="fade-in">
+
+                        <img src="assets/img/droneLinkedIn.jpg" alt="Drone" height="250">
+
+                    </p>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6 icon-box">
+                    <div class="icon"><a href="assets/CapstoneSeniorDesign.zip" target="_blank"><i
+                            class="bi bi-arrow-down-circle"></i></a></div>
+                    <h4 class="title"><a href="assets/CapstoneSeniorDesign.zip" target="_blank">AGRICULTURE
+                        MAINTENANCE &amp; CROP MONITORING DRONE<br><br> <em>Capstone ECE</em></a></h4>
+                    <p class="description" data-aos="fade-in">Group project; This conceptual project aims to address
+                        issues such as wildfires, inadequate water management, and improper pest control by creating
+                        a drone that can detect fires and notify emergency services, dispense proper levels of
+                        pesticides, and manage waterlevels by monitoring soil moisture.</p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 icon-box">
+                    <div class="icon"><a href="assets/SocketPython.zip" target="_blank"><i
+                            class="bi bi-arrow-down-circle"></i></a></div>
+                    <h4 class="title"><a href="assets/SocketPython.zip" target="_blank">SOCKET PROGRAMMING<br>in
+                        Python<br><br><em>Internet Technology</em></a></h4>
+                    <p class="description" data-aos="fade-in">Exploration of Python programming and Python's socket
+                        programming interface. Two programs (client.py and server.py) were constructed to
+                        communicate with each other over the socket API.</p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 icon-box">
+                    <div class="icon"><a href="assets/project2.zip"><i class="bi bi-arrow-down-circle"
+                                                                       target="_blank"></i></a></div>
+                    <h4 class="title"><a href="assets/project2.zip" target="_blank">ASYNCHRONOUS SOCKETS<br><br>
+                        <em>Internet Technology</em></a></h4>
+                    <p class="description" data-aos="fade-in">In collaboration with a classmate; Implementation of a
+                        set of programs that mimic an implementation of load balancing across DNS servers. Request
+                        duplication is explored. Four programs were constructed: client, load balancing server, and
+                        two DNS servers. </p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 icon-box">
+                    <div class="icon"><a href="assets/HTTP.zip" target="_blank"><i
+                            class="bi bi-arrow-down-circle"></i></a></div>
+                    <h4 class="title"><a href="assets/HTTP.zip" target="_blank">HTTP SERVER &amp; WITH
+                        AUTHENTICATION<br><br> <em>Internet Technology</em></a></h4>
+                    <p class="description" data-aos="fade-in">In collaboration with a classmate; Implementation of
+                        an HTTP server that servers secret user data. Access to secret data will be authenticated
+                        through username and password and cookies. HTTP protocol will be used to render
+                        browser-readable data in server.py.</p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 icon-box">
+                    <div class="icon"><a href="assets/SocketC.zip" target="_blank"><i
+                            class="bi bi-arrow-down-circle"></i></a></div>
+                    <h4 class="title"><a href="assets/SocketC.zip" target="_blank">SOCKET PROGRAMMING <br> in
+                        C<br><br> <em>Network Centric Programming</em></a></h4>
+                    <p class="description" data-aos="fade-in">Implementation of a basic socket server and client
+                        using the port 8080 and local host. Client and server will be communicating and exchanging
+                        messages. </p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 icon-box">
+                    <div class="icon"><a href="assets/ond3-p01.tar.gz" target="_blank"><i
+                            class="bi bi-arrow-down-circle"></i></a></div>
+                    <h4 class="title"><a href="assets/ond3-p01.tar.gz" target="_blank">MULTIPLE STRING
+                        SEARCHER<br><br> <em>Network Centric Programming</em></a></h4>
+                    <p class="description" data-aos="fade-in">Linux programming environment C programming concepts
+                        such as command line arguments, pointers, IO, etc. </p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 icon-box">
+                    <div class="icon"><a href="assets/PCR.zip" target="_blank"><i
+                            class="bi bi-arrow-down-circle"></i></a></div>
+                    <h4 class="title"><a href="assets/PCR.zip" target="_blank">READING PCR VALUES &amp; ON A TPM 2.0
+                        SIMULATOR<br><br> <em>Hardware &amp; Systems Security</em></a></h4>
+                    <p class="description" data-aos="fade-in">This lab assignment is to run a basic TPM command to
+                        read PCR values on a TPM 2.0 simulator. Ubuntu Linux is utilized regardless of TPM 2.0 chip
+                        through a virtual machine.</p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 icon-box">
+                    <div class="icon"><a
+                            href="https://docs.google.com/document/d/1sDFdKmxhXUEkReSRuht3BWcmcC1qbgvxnMlpVh03fnQ/edit?usp=sharing"
+                            target="_blank"><i class="bi bi-arrow-down-circle"></i></a></div>
+                    <h4 class="title"><a
+                            href="https://docs.google.com/document/d/1sDFdKmxhXUEkReSRuht3BWcmcC1qbgvxnMlpVh03fnQ/edit?usp=sharing"
+                            target="_blank">INTRODUCTION TO HADOOP &amp; PYSPARK<br><br> <em>Cloud Computing &amp;
+                        Big Data</em></a></h4>
+                    <p class="description" data-aos="fade-in">In collaboration with a classmate; This lab assignment
+                        is an introduction to setting up Hadoop and PySpark with Python files.</p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 icon-box">
+                    <div class="icon"><a
+                            href="https://docs.google.com/document/d/1yKnYqAj2ee5-LyqqhhKpUUWZFmrpjiaAG1_ieVbjwbU/edit?usp=sharing"
+                            target="_blank"><i class="bi bi-arrow-down-circle"></i></a></div>
+                    <h4 class="title"><a
+                            href="https://docs.google.com/document/d/1yKnYqAj2ee5-LyqqhhKpUUWZFmrpjiaAG1_ieVbjwbU/edit?usp=sharing"
+                            target="_blank">SIMPLESCALAR: PIPELINING &amp; BRANCH PREDICTION<br><br> <em>Computer
+                        Architecture I</em></a></h4>
+                    <p class="description" data-aos="fade-in">In collaboration with classmates; This lab assignment
+                        utilizes the SimpleScalar simulator to run experiments regarding pipelining and branch
+                        prediction. </p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 icon-box">
+                    <div class="icon"><a href="assets/regularExpressions.hs.zip" target="_blank"><i
+                            class="bi bi-arrow-down-circle"></i></a></div>
+                    <h4 class="title"><a href="assets/regularExpressions.hs.zip" target="_blank">REGULAR EXPRESSIONS
+                        &amp; IN HASKELL<br><br> <em>Principles of Programming Languages</em></a></h4>
+                    <p class="description" data-aos="fade-in">Assignment given to further explore and test
+                        properties of Haskell regular expressions.</p>
+                </div>
+
+            </div>
+                -->
+        </div>
+
+    </section>
+
+
+
+    <!-- End Projects Preview Section (Services) -->
+
+    <!-- ======= Interests Section ======= -->
+    <!-- End Interests Section  -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact <img src="assets/img/Interests/avatar2.png" class="testimonial-img"
+                                 alt="Hassan Alfareed's Cartoon Avatar" width="60" height="60"></h2>
+            </div>
+
+            <div class="row" data-aos="fade-up">
+
+                <div class="col-lg-5 d-flex align-items-stretch">
+                    <div class="info">
+
+                        <div class="email">
+                            <i class="bi bi-envelope"></i>
+                            <h4>Email:</h4>
+                            <p><a href="mailto:halfareed24@gmail.com">halfareed24@gmail.com</a></p>
+                        </div>
+
+                        <div class="phone">
+                            <i class="bi bi-phone"></i>
+                            <h4>Call:</h4>
+                            <p><a href="tel:+16097380000">(609) 738-0000</a></p>
+                        </div>
+
+
+                        <br><br>
+
+
+                        <h5>Best,</h5> <img src="assets/img/signature.png" class="testimonial-img"
+                                            alt="Hassan Alfareed's Signature" width="180" height="75">
+
+                    </div>
+                </div>
+
+
+                <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+                    <!-- TODO: replace with the full embed URL from the Google Form's Send > Embed HTML tab
+                         (https://docs.google.com/forms/d/e/FORM_ID/viewform?embedded=true). forms.gle short
+                         links are frequently refused inside an iframe. -->
+                    <iframe class="contact-form-frame" title="Contact form"
+                            src="https://forms.gle/YVexii2TEoCbpVCG6" loading="lazy">Loading…
+                    </iframe>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+<!-- End Contact Section -->
 </main>
 <!-- End #main -->
 
@@ -856,7 +861,7 @@
 <footer id="footer">
     <div class="container">
         <div class="credits">
-            Last Updated: 04/02/2024
+            &copy; 2026 Hassan Alfareed &middot; Last Updated: 08/27/2026
         </div>
     </div>
 </footer>
@@ -864,33 +869,47 @@
 <!-- This is the end section for the rainbow scrollbar-->
 
 
-<div title="Up Up Up you go!"><a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+<div title="Up Up Up you go!"><a href="#hero" aria-label="Back to top"
+                                 class="back-to-top d-flex align-items-center justify-content-center"><i
         class="bi bi-arrow-up-short"></i></a></div>
 
 <!-- Vendor JS Files -->
-<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
 <script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 <script src="assets/vendor/typed.js/typed.min.js"></script>
 <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
 
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
 
 <!-- Script for Rainbow Scroll Bar -->
-<script type="text/javascript">
-    let progress = document.getElementById('progressbar');
-    let totalHeight = document.body.scrollHeight - window.innerHeight;
-    window.onscroll = function () {
-        let progressHeight = (window.pageYOffset / totalHeight) * 100;
-        progress.style.height = progressHeight + "%";
-    }
+<script>
+    (function () {
+        const progress = document.getElementById('progressbar');
+        if (!progress) return;
+
+        let queued = false;
+
+        const update = () => {
+            queued = false;
+            // Recalculated every frame: AOS reveals and resizes change document height.
+            const total = document.documentElement.scrollHeight - window.innerHeight;
+            const pct = total > 0 ? Math.min(100, Math.max(0, (window.scrollY / total) * 100)) : 0;
+            progress.style.height = pct + '%';
+        };
+
+        const request = () => {
+            if (!queued) {
+                queued = true;
+                window.requestAnimationFrame(update);
+            }
+        };
+
+        window.addEventListener('scroll', request, {passive: true});
+        window.addEventListener('resize', request);
+        window.addEventListener('load', update);
+        update();
+    })();
 </script>
-<!-- Script for Rainbow Scroll Bar -->
 
 
 </body>
