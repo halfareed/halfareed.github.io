@@ -1810,6 +1810,107 @@ body1nterestsInner {
 
 
 
+/* 1. The sidebar name is now a <div class="profile-name"> instead of a second
+   <h1> (the hero heading is the page's only h1). These rules restore the exact
+   styling the old h1 had. Cleaner alternative: in style.css line 87 change
+   "#header .profile h1" to "#header .profile .profile-name", do the same on
+   lines 97-98, and then delete this block. */
+#header .profile .profile-name {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  text-align-last: center;
+  font-family: "Poppins", 'sans-serif';
+}
+
+#header .profile .profile-name a,
+#header .profile .profile-name a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* 2. The nav toggle is now a real <button> so it can be focused and activated
+   from the keyboard. .mobile-nav-toggle already sets border/background/cursor,
+   it only needed the UA button padding zeroed out. */
+.mobile-nav-toggle {
+  padding: 0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* 3. The education card uses the bare class .card, which collides with
+   Bootstrap's own .card component (loaded before style.css). Your rule
+   overrides background/size but not Bootstrap's border, radius and flex
+   display, so the card was carrying a stray 1px light border. Longer term,
+   rename .card to .edu-card throughout style.css to drop the collision. */
+.containeredu .card {
+  display: block;
+  border: 0;
+  border-radius: 0;
+  background-clip: border-box;
+}
+
+/* 4. The diploma image had a hardcoded height="200" attribute and no max-width,
+   so it overflowed narrow screens (and section{overflow:hidden} silently
+   cropped it). */
+.containeredu .edu-diploma {
+  max-width: 100%;
+  max-height: 200px;
+  height: auto;
+  border: 3px solid #fff;
+}
+
+/* 5. 80px padding plus an 80px gap is most of a phone screen. */
+@media (max-width: 768px) {
+  .containeredu {
+    padding: 40px 15px;
+    gap: 40px;
+  }
+}
+
+/* 6. The contact form iframe had width="800" hardcoded, which overflowed every
+   viewport under 800px wide. */
+.contact .contact-form-frame {
+  width: 100%;
+  min-height: 470px;
+  border: 0;
+  display: block;
+}
+
+/* 7. The email and phone in the contact panel are now mailto:/tel: links. The
+   global link colour is too light against the panel's #F6F8FC background, so
+   they inherit the surrounding text colour instead. */
+.contact .info p a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contact .info p a:hover {
+  text-decoration: underline;
+}
+
+/* 8. #scrollPath was never rendering because its id was misspelled in the HTML
+   ("scrollPath>"). Now that the 10px track is visible, the 5px progress bar sat
+   off-centre inside it. Delete this rule if you prefer the thinner bar. */
+#progressbar {
+  width: 10px;
+}
+
+/* NOTE — dead rules in style.css you can safely delete (they match nothing):
+   line  545 & 1142: two separate .portfolio blocks, plus .portfolio-details,
+                     #portfolio-flters and .portfolio-wrap (no portfolio grid
+                     in the markup any more)
+   line  800:        .interests .interests-slider and the whole .interests block
+   line 1147:        .box / .box .imgBx (orphaned gallery card styles)
+   line 1279-1355:   .education .testimonials-* and .educational-item* — note
+                     .educational-itemh3 / .educational-itemp are themselves
+                     typos, missing a space before the tag name
+   line 1752:        "body1nterestsInner" is not a valid selector (a "1" for an
+                     "i"; it was probably meant to be body.interestsInner)
+   That's roughly 400 lines of CSS to reclaim in the revamp. */
+
+
 
 
 
