@@ -91,9 +91,10 @@
    * Mobile nav toggle
    */
   on('click', '.mobile-nav-toggle', function(e) {
-    select('body').classList.toggle('mobile-nav-active')
+    const open = select('body').classList.toggle('mobile-nav-active')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
+    this.setAttribute('aria-expanded', String(open))
   })
 
   /**
@@ -109,6 +110,7 @@
         let navbarToggle = select('.mobile-nav-toggle')
         navbarToggle.classList.toggle('bi-list')
         navbarToggle.classList.toggle('bi-x')
+        navbarToggle.setAttribute('aria-expanded', 'false')
       }
       scrollto(this.hash)
     }
@@ -129,9 +131,9 @@
    * Hero type effect
    */
   const typed = select('.typed')
-  if (typed) {
+  if (typed && typeof Typed !== 'undefined') {
     let typed_strings = typed.getAttribute('data-typed-items')
-    typed_strings = typed_strings.split(',')
+    typed_strings = typed_strings.split(',').map(str => str.trim())
     new Typed('.typed', {
       strings: typed_strings,
       loop: true,
@@ -145,7 +147,7 @@
    * Skills animation
    */
   let skilsContent = select('.skills-content');
-  if (skilsContent) {
+  if (skilsContent && typeof Waypoint !== 'undefined') {
     new Waypoint({
       element: skilsContent,
       offset: '80%',
@@ -159,110 +161,40 @@
   }
 
   /**
-   * Porfolio isotope and filter
+   * REMOVED: Isotope portfolio filter, GLightbox, the two Swiper sliders and
+   * PureCounter. None of the elements they target (.portfolio-container,
+   * .portfolio-lightbox, .portfolio-details-slider, .interests-slider,
+   * .purecounter) exist in index.html any more, and their vendor <script> tags
+   * have been removed. They ran unguarded ahead of AOS.init(), so a throw from
+   * any of them left every [data-aos] element stuck at opacity 0.
+   *
+   * To restore one: re-add its vendor script in index.html, then re-init here
+   * behind an element check, e.g.
+   *   if (select('.interests-slider')) new Swiper('.interests-slider', {...})
    */
-  window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
-    if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item'
-      });
-
-      let portfolioFilters = select('#portfolio-flters li', true);
-
-      on('click', '#portfolio-flters li', function(e) {
-        e.preventDefault();
-        portfolioFilters.forEach(function(el) {
-          el.classList.remove('filter-active');
-        });
-        this.classList.add('filter-active');
-
-        portfolioIsotope.arrange({
-          filter: this.getAttribute('data-filter')
-        });
-        portfolioIsotope.on('arrangeComplete', function() {
-          AOS.refresh()
-        });
-      }, true);
-    }
-
-  });
-
-  /**
-   * Initiate portfolio lightbox 
-   */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
-  });
-
-  /**
-   * Portfolio details slider
-   */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
-
-  /**
-   * Interests slider
-   */
-  new Swiper('.interests-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
-
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: 20
-      }
-    }
-  });
 
   /**
    * Animation on scroll
    */
   window.addEventListener('load', () => {
-    AOS.init({
-      duration: 1000,
-      easing: 'ease-in-out',
-      once: true,
-      mirror: false
-    })
+    if (typeof AOS !== 'undefined') {
+      AOS.init({
+        duration: 1000,
+        easing: 'ease-in-out',
+        once: true,
+        mirror: false
+      })
+    }
   });
-
-  /**
-   * Initiate Pure Counter 
-   */
-  new PureCounter();
 
 })()
 
 /**
-   * Steam Cards
-   */
+ * Steam Cards (interests inner page). No .card3d elements on index.html, so this
+ * is inert here; kept for the gallery/interests page. Wrapped in an IIFE so map()
+ * and Card3D() no longer leak into the global namespace.
+ */
+(function () {
 
 function map(val, minA, maxA, minB, maxB) {
   return minB + ((val - minA) * (maxB - minB)) / (maxA - minA);
@@ -297,6 +229,8 @@ cards.forEach((card) => {
     img.style.filter = 'brightness(1)';
   });
 });
+
+})();
 
 
 
