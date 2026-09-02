@@ -46,6 +46,21 @@
   let navbarlinks = select('#navbar .scrollto', true)
   const navbarlinksActive = () => {
     let position = window.scrollY + 200
+
+    // The final section is short enough that its offsetTop can sit below the
+    // furthest the page will scroll, so position never reaches it and the
+    // previous section stays lit. When we are at the bottom, the last section
+    // with a resolvable target is the active one by definition.
+    const atBottom = (window.innerHeight + window.scrollY) >=
+      (document.documentElement.scrollHeight - 2)
+
+    if (atBottom) {
+      const resolvable = navbarlinks.filter(l => l.hash && select(l.hash))
+      const last = resolvable[resolvable.length - 1]
+      navbarlinks.forEach(l => l.classList.toggle('active', l === last))
+      return
+    }
+
     navbarlinks.forEach(navbarlink => {
       if (!navbarlink.hash) return
       let section = select(navbarlink.hash)
